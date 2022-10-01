@@ -1,0 +1,52 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <style>
+    table, th, td {
+      border:1px solid black;
+    }
+    </style>
+
+  <title>Electronic Data Interchange</title>
+
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+</head>
+
+<body>
+    
+    <h1>Issue a Report<h1>
+        <table style="width:100%; display: flex; border: 2pt; border-color: black; padding: 75px;">
+            <tr>
+                <th>Problem:</th>
+                <th><input type="text" placeholder="Short Headline for the problem" name="prob" required></th>
+            </tr>
+            <tr>
+                <th>Problem Description:</th>
+                <th><input type="text" placeholder="2-3 sentence description of the problem" name="probDesc" required></th>
+            </tr>
+            <tr>
+                <th>Enter Date:</th>
+                <th><input type="date" name="date" required></th>
+            </tr>
+            <tr>
+                <th>Time:</th>
+                <th><input type="time" name="time" required></th>
+            </tr>
+            <tr>
+                <th>Company:</th>
+                <th><input type="text" placeholder="Company Name" name="companyName" required></th>
+            </tr>
+          </table>
+          <button id="submitButton">Submit</button>
+
+          <script>
+            document.getElementById("submitButton").onclick = function(request) {
+              // console.log(document.getElementByName("uname").value);
+              location.href = './comingsoon.html'; 
+            }
+            
+          </script>
+</body>
+</html>

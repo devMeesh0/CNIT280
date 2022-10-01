@@ -1,0 +1,39 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Electronic Data Interchange</title>
+
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+</head>
+
+<body>
+    
+  <form action="action_page.php" method="post">
+   <h1 style="display:flex; padding-left: 50px;">Member Login</h1>
+  
+    <div class="container" style="display:flex; padding: 50px;">
+      <form>
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" required>
+        <label for="psw"><b>Password</b></label>
+        <input type="text" placeholder="Enter Password" name="psw" required>
+        <p>to get to the next page, do not enter a password, glitch to be fixed later</p>
+    
+        <button id="loginButton" >Login</button>
+     </form>
+    </div>
+    
+  </form>
+  <script>
+    document.getElementById("loginButton").onclick = function(request) {
+      // console.log(document.getElementByName("uname").value);
+      location.href = './memberMenu.html'; 
+    }
+    
+  </script>
+  
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!doctype html>
+
+<html lang="en">
+    <style>
+        table, th, td {
+          border:1px solid black;
+        }
+        </style>
+<head>
+  <meta charset="utf-8">
+
+  <title>Electronic Data Interchange</title>
+
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+</head>
+
+<body>
+    
+    <h1 style="display: flex; padding-left: 75px; padding-top: 5000;">Member Menu</h1>
+    <table style="width:100%; display: flex; border: 2pt; border-color: black; padding: 75px; ">
+        <tr>
+          <th><p>Report of Contributions</p></th>
+          <th><p>Distribution Report</p></th>
+          <th><p>Issue a Report</p></th>
+        </tr>
+        <tr>
+          <td><button id="contributionReportButton" >View Contribution Report</button></td>
+          <td><button id="distributionReportButton" >View Distrobution Report</button></td>
+          <td><button id="issueReportButton" >Issue a claim Report</button></td>
+        </tr>
+      </table>
+      <script>
+        document.getElementById("contributionReportButton").onclick = function(request) {
+          location.href = './comingsoon.html'; 
+        }
+        document.getElementById("distributionReportButton").onclick = function(request) {
+          location.href = './comingsoon.html'; 
+        }
+        document.getElementById("issueReportButton").onclick = function(request) {
+          location.href = './issueReport.html'; 
+        }
+        
+      </script>
+
+</body>
+</html>
