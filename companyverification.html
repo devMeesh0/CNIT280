@@ -1,0 +1,42 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Electronic Data Interchange</title>
+
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+</head>
+
+<body>
+    
+  <h1 style="display:flex; padding-left: 50px;">Company Verification</h1>
+  
+    <div class="container" style=" padding: 50px;">
+      <form id="verificationButtonForm">
+        <b>Company Name: <input type="text" placeholder="Enter Username" name="companyName" required> </b> <br>
+        <p style="color: red;">For TA's:: Company: "The Company"</p>
+        <button type="reset" id="companyVerificationButton">Verify</button>
+     </form>
+     <button onclick="location.href = './index.html'">Back to Main Menu</button>
+    </div>
+  <script>
+    document.getElementById("companyVerificationButton").onclick = function() {
+      var companyName = document.getElementById("verificationButtonForm")[0].value;
+
+      if(companyName == "The Company") {
+        location.href = './memberMenu.html'; 
+      } else {
+        alert("Incorrect login, try again");
+        location.href = './companyverification.html'; 
+      }
+    }
+    // document.getElementById("loginButton").onclick = function() {
+    //   console.log(document.getElementByName("uname").value);
+    // }
+    
+  </script>
+  
+</body>
+</html>
