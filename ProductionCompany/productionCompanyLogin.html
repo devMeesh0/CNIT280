@@ -11,26 +11,26 @@
 
 <body>
     
-  <h1 style="display:flex; padding-left: 50px;">Employee Login</h1>
+  <h1 style="display:flex; padding-left: 50px;">Production Company Login</h1>
   
     <div class="container" style=" padding: 50px;">
       <form id="loginButtonForm">
         <b>Username: <input type="text" placeholder="Enter Username" name="uname" required> </b> <br>
         <b>Password: <input type="password" placeholder="Enter Password" name="psw" > </b> <br>
-        <p style="color: red;">For TA's Username: "Employee", Password: "pass"</p>
-        <button type="reset" id="employeeloginButton">Login</button>
+        <p style="color: red;">For TA's Username: "PCompany", Password: "pass"</p>
+        <button type="reset" id="pcompanyloginButton">Login</button>
      </form>
     </div>
   <script>
-    document.getElementById("employeeloginButton").onclick = function() {
+    document.getElementById("pcompanyloginButton").onclick = function() {
       var uname = document.getElementById("loginButtonForm")[0].value;
       var psw = document.getElementById("loginButtonForm")[1].value;
 
-      if(uname == "Employee" && psw == "pass") {
-        location.href = './comingsoon.html'; 
-      } else {
+      if(uname == "PCompany" && psw == "pass") {
+        location.href = './productionCompanyMenu.html'; 
+      } else { 
         alert("Incorrect login, try again");
-        location.href = './employeelogin.html'; 
+        location.href = './productionCompanyLogin.html'; 
       }
     }
     // document.getElementById("loginButton").onclick = function() {

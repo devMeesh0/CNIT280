@@ -1,0 +1,48 @@
+<!doctype html>
+
+<html lang="en">
+    <style>
+        table, th, td {
+          border:1px solid black;
+        }
+        </style>
+<head>
+  <meta charset="utf-8">
+
+  <title>Electronic Data Interchange</title>
+
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+</head>
+
+<body>
+    <h1 style="display: flex; padding-left: 75px; padding-top: 5000;">Member Menu</h1>
+    <table style="width:100%; display: flex; border: 2pt; border-color: black; padding: 75px;">
+        <tr>
+          <th><p>Dissolve agreements</p></th>
+          <th><p>Funds Allocation Report</p></th>
+          <th><p>Distrobution Report</p></th>
+        </tr>
+        <tr>
+          <td><button id="dissolutionAgreementButton" >Submit a Dissolution Agreement</button></td>
+          <td><button id="fundsAllocationButton" >View Money Allocation</button></td>
+          <td><button id="distroReport" >View Distro Report</button></td>
+        </tr>
+      </table>
+
+      <script>
+        document.getElementById("dissolutionAgreementButton").onclick = function(request) {
+          location.href = './dissolutionAgreement.html'; 
+        }
+        document.getElementById("fundsAllocationButton").onclick = function(request) {
+          alert("Money Allocation Report will be available for viewing by date once database integration is completed");
+          location.href = './productionCompanyMenu.html'; 
+        }
+        document.getElementById("distroReport").onclick = function(request) {
+          alert("Distrobution Report will be available for viewing by date once database integration is completed");
+          location.href = './productionCompanyMenu.html'; 
+        }
+
+      </script>
+
+</body>
+</html>

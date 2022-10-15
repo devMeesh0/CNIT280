@@ -1,0 +1,41 @@
+<!doctype html>
+
+<html lang="en">
+    <style>
+        table, th, td {
+          border:1px solid black;
+        }
+        </style>
+<head>
+  <meta charset="utf-8">
+
+  <title>Electronic Data Interchange</title>
+
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+</head>
+
+<body>  
+    <h1 style="display: flex; padding-left: 75px; padding-top: 5000;">DGA Employee Menu</h1>
+    <table style="width:100%; display: flex; border: 2pt; border-color: black; padding: 75px;">
+        <tr>
+          <th><p>Accept/Deny Dissolution of Agreement Requests</p></th>
+          <th><p>Create Funds Allocation Report For Production Companies</p></th>
+        </tr>
+        <tr>
+          <td><button id="dissolutionRequestButton"> View Disolussion Requests</button></td>
+          <td><button id="fundsAllocationButton"> Create Report</button></td>
+        </tr>
+      </table>
+      <script>
+        document.getElementById("dissolutionRequestButton").onclick = function(request) {
+          alert('Reqiests will be able to be recieved once database integration is completed');
+          location.href = './comingsoon.html'; 
+        }
+        document.getElementById("fundsAllocationButton").onclick = function(request) {
+          location.href = './fundsAllocationForm.html'; 
+        }
+        
+      </script>
+
+</body>
+</html>
