@@ -15,17 +15,21 @@
 </head>
 
 <body>
-    <h1 style="display: flex; padding-left: 75px; padding-top: 5000;">Member Menu</h1>
+    <h1 style="display: flex; padding-left: 75px; padding-top: 5000;">Production Company Employee Menu</h1>
     <table style="width:100%; display: flex; border: 2pt; border-color: black; padding: 75px;">
         <tr>
           <th><p>Dissolve agreements</p></th>
           <th><p>Funds Allocation Report</p></th>
           <th><p>Distrobution Report</p></th>
+          <th><p>Dispute a Use of Funds Report</p></th>
+          <th><p>Check Scores on Report of Contribution</p></th>
         </tr>
         <tr>
           <td><button id="dissolutionAgreementButton" >Submit a Dissolution Agreement</button></td>
           <td><button id="fundsAllocationButton" >View Money Allocation</button></td>
           <td><button id="distroReport" >View Distro Report</button></td>
+          <td><button id="fundsDisputeFormButton" >View Funds Dispute Form</button></td>
+          <td><button id="checkContributionButton" >View Contribution Report</button></td>
         </tr>
       </table>
 
@@ -39,6 +43,13 @@
         }
         document.getElementById("distroReport").onclick = function(request) {
           alert("Distrobution Report will be available for viewing by date once database integration is completed");
+          location.href = './productionCompanyMenu.html'; 
+        }
+        document.getElementById("fundsDisputeFormButton").onclick = function(request) {
+          location.href = './fundsDisputeForm.html'; 
+        }
+        document.getElementById("checkContributionButton").onclick = function(request) {
+          alert("Contribution Report will be available for viewing once database integration is completed");
           location.href = './productionCompanyMenu.html'; 
         }
 

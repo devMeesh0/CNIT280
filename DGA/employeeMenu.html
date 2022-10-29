@@ -20,10 +20,14 @@
         <tr>
           <th><p>Accept/Deny Dissolution of Agreement Requests</p></th>
           <th><p>Create Funds Allocation Report For Production Companies</p></th>
+          <th><p>Accept/Deny Dispute of Funds Reports</p></th>
+          <th><p>Create Report of Contibutions For Production Companies</p></th>
         </tr>
         <tr>
           <td><button id="dissolutionRequestButton"> View Disolussion Requests</button></td>
           <td><button id="fundsAllocationButton"> Create Report</button></td>
+          <td><button id="fundsDisputeFormButton"> View Requests Recieved</button></td>
+          <td><button id="fundsContributionFormButton"> Create Report</button></td>
         </tr>
       </table>
       <script>
@@ -34,7 +38,15 @@
         document.getElementById("fundsAllocationButton").onclick = function(request) {
           location.href = './fundsAllocationForm.html'; 
         }
+        document.getElementById("fundsDisputeFormButton").onclick = function(request) {
+          alert('Reqiests will be able to be recieved once database integration is completed');
+          location.href = './comingsoon.html'; 
+        }
         
+        document.getElementById("fundsContributionFormButton").onclick = function(request) {
+          location.href = './contributionReportForm.html'; 
+        }
+
       </script>
 
 </body>

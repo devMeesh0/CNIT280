@@ -1,0 +1,53 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <style>
+    table, th, td {
+      border:1px solid black;
+    }
+    </style>
+
+  <title>Electronic Data Interchange</title>
+
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+</head>
+
+<body>
+    <h1 style="padding-left: 75px;">Create Report of Contributions</h1>
+        <form id="disolussionAgreementForm">
+        <table style="width:100%; display: flex; border: 2pt; border-color: black; padding: 75px;">
+            <tr>
+                <th>Report ID:</th>
+                <th><input style="display: flex;" type="text" placeholder="ID Number of Agreement" name="prob" required></th>
+            </tr>
+            <tr>
+                <th>Contibutions Allocated in order by company and amount:</th>
+                <th><input type="text" placeholder="Description of Contributions allocated" name="probDesc" required></th>
+            </tr>
+            <tr>
+                <th>Enter Date:</th>
+                <th><input type="date" name="date" required></th>
+            </tr>
+            <tr>
+                <th>Time:</th>
+                <th><input type="time" name="time" required></th>
+            </tr>
+            <tr>
+                <th>Company:</th>
+                <th><input type="text" placeholder="Company Name" name="companyName" required></th>
+            </tr>
+          </table>
+        </form>
+          <button id="submitButton">Submit</button>
+
+          <script>
+            document.getElementById("submitButton").onclick = function() {
+              // console.log(document.getElementByName("uname").value);
+              alert("Submission will go through to Production Company when database integration is added");
+              location.href = './comingsoon.html'; 
+            }
+          </script>
+</body>
+</html>
