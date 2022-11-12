@@ -23,6 +23,7 @@
           <th><p>Distrobution Report</p></th>
           <th><p>Dispute a Use of Funds Report</p></th>
           <th><p>Check Scores on Report of Contribution</p></th>
+          <th><p>Submit/Edit DGA Application Info</p></th>
         </tr>
         <tr>
           <td><button id="dissolutionAgreementButton" >Submit a Dissolution Agreement</button></td>
@@ -30,6 +31,7 @@
           <td><button id="distroReport" >View Distro Report</button></td>
           <td><button id="fundsDisputeFormButton" >View Funds Dispute Form</button></td>
           <td><button id="checkContributionButton" >View Contribution Report</button></td>
+          <td><button id="editAgreementButton" >Create or edit a Edit DGA Agreement</button></td>
         </tr>
       </table>
 
@@ -51,6 +53,10 @@
         document.getElementById("checkContributionButton").onclick = function(request) {
           alert("Contribution Report will be available for viewing once database integration is completed");
           location.href = './productionCompanyMenu.html'; 
+        }
+        document.getElementById("editAgreementButton").onclick = function(request) {
+          alert("Editing Agreements will only be available once database integration is completed");
+          location.href = './DGAagreement.html'; 
         }
 
       </script>
