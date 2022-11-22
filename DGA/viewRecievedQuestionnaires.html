@@ -1,0 +1,45 @@
+<!doctype html>
+
+<html lang="en">
+    <style>
+        table, th, td {
+          border:1px solid black;
+        }
+        </style>
+<head>
+  <meta charset="utf-8">
+
+  <title>Electronic Data Interchange</title>
+
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+</head>
+
+<body>  
+    <h1 style="display: flex; padding-left: 75px; padding-top: 5000;">View Recieved Questionnaires</h1>
+    <table style="width:100%; display: flex; border: 2pt; border-color: black; padding: 75px;">
+        <tr>
+          <th><p>View New Questionnairs</p></th>
+          <th><p>View All Questionnaires</p></th>
+          <th><p>Return to Menu</p></th>
+          
+        </tr>
+        <tr>
+          <td><button id="newQuestionnaires"> View </button></td>
+          <td><button id="allQuestionnaires"> View</button></td>
+          <td><button id="returnToMenu"> Return</button></td>
+        </tr>
+      </table>
+      <script>
+        document.getElementById("newQuestionnaires").onclick = function(request) {
+          location.href = './comingsoon.html'; 
+        }
+        document.getElementById("allQuestionnaires").onclick = function(request) {
+          location.href = './comingoon.html'; 
+        }
+        document.getElementById("returnToMenu").onclick = function(request) {
+          location.href = './employeeMenu.html'; 
+        }
+      </script> 
+
+</body>
+</html>

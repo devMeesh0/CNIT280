@@ -23,6 +23,7 @@
           <th><p>Accept/Deny Dispute of Funds Reports</p></th>
           <th><p>Create Report of Contibutions For Production Companies</p></th>
           <th><p>Review Report of Contibutions For Production Companies</p></th>
+          <th><p>View Submitted DGA Plan Enrollment Questionnaire</p></th>
         </tr>
         <tr>
           <td><button id="dissolutionRequestButton"> View Disolussion Requests</button></td>
@@ -30,6 +31,7 @@
           <td><button id="fundsDisputeFormButton"> View Requests Recieved</button></td>
           <td><button id="fundsContributionFormButton"> Create Report</button></td>
           <td><button id="fundsContributionFormButton"> View Report</button></td>
+          <td><button id="viewEnrollmentQuestionaire">View Enrollment Questionaire </button></td>
         </tr>
       </table>
       <script>
@@ -51,6 +53,9 @@
         
         document.getElementById("fundsContributionFormButton").onclick = function(request) {
           alert('Report will be viewable once database integration is completed');
+        }
+        document.getElementById("viewEnrollmentQuestionaire").onclick = function(request) {
+          location.href = './viewRecievedQuestionnaires.html'; 
         }
       </script> 
 

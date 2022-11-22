@@ -22,11 +22,16 @@
           <th><p>Report of Contributions</p></th>
           <th><p>Distribution Report</p></th>
           <th><p>Issue a Report</p></th>
+          <th><p>Issue an Inadequate Contributions Report Report</p></th>
+          <th><p>Fill out a DGA Plan Enrollment Questionnaire</p></th>
         </tr>
         <tr>
           <td><button id="contributionReportButton" >View Contribution Report</button></td>
           <td><button id="distributionReportButton" >View Distrobution Report</button></td>
           <td><button id="issueReportButton" >Issue a claim Report</button></td>
+          <td><button id="inadequateContributionsReport" >Issue an Inadequate Contributions Report</button></td>
+          <td><button id="questionnaireButton" >Fill out Questionnaire</button></td>
+          
         </tr>
       </table>
       <script>
@@ -38,6 +43,12 @@
         }
         document.getElementById("issueReportButton").onclick = function(request) {
           location.href = './issueReport.html'; 
+        }
+        document.getElementById("inadequateContributionsReport").onclick = function(request) {
+          location.href = './inadequateContributionsReport.html'; 
+        }
+        document.getElementById("questionnaireButton").onclick = function(request) {
+          location.href = './plansQuestionnaireForm.html'; 
         }
         
       </script>

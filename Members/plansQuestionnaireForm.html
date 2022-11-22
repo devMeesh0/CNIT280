@@ -1,0 +1,62 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <style>
+    table, th, td {
+      border:1px solid black;
+    }
+    </style>
+
+  <title>Electronic Data Interchange</title>
+
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+</head>
+
+<body>
+    <h1 style="padding-left: 75px;">DGA Plans Enrollment Questionnaire</h1>
+        <table style="width:100%; display: flex; border: 2pt; border-color: black; padding: 75px;">
+            <tr>
+                <th>Member ID:</th>
+                <th><input style="display: flex;" type="text" name="prob" required></th>
+            </tr>
+            <tr>
+                <th>Enter Full Name:</th>
+                <th><input style="display: flex;" type="text" placeholder="FirstName, LastName" name="prob" required></th>
+            </tr>
+            <tr>
+                <th>SSN:</th>
+                <th><input type="text" placeholder="XXXXXXXXX" name="probDesc" required></th>
+            </tr>
+            <tr>
+                <th>Address:</th>
+                <th><input type="text" placeholder="Home Address" name="probDesc" required></th>
+            </tr>
+            <tr>
+                <th>Enter Date of Birth:</th>
+                <th><input type="date" name="date" required></th>
+            </tr>
+            <tr>
+                <th>Enter Dependents' Name:</th>
+                <th><input style="display: flex;" type="text" placeholder="Enter dependents name and age" name="prob" required></th>
+            </tr>
+            <tr>
+                <th>Time:</th>
+                <th><input type="time" name="time" required></th>
+            </tr>
+            <tr>
+                <th>Company:</th>
+                <th><input type="text" placeholder="Company Name" name="companyName" required></th>
+            </tr>
+          </table>
+          <button id="submitButton">Submit</button>
+
+          <script>
+            document.getElementById("submitButton").onclick = function(request) {
+              alert('Submitted!');
+              location.href = './memberMenu.html'; 
+            }
+          </script>
+</body>
+</html>
