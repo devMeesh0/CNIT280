@@ -11,6 +11,7 @@
 
   <title>Electronic Data Interchange</title>
 
+  <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="css/styles.css?v=1.0">
 </head>
 
@@ -40,8 +41,7 @@
           location.href = './dissolutionAgreement.html'; 
         }
         document.getElementById("fundsAllocationButton").onclick = function(request) {
-          alert("Money Allocation Report will be available for viewing by date once database integration is completed");
-          location.href = './productionCompanyMenu.html'; 
+          location.href = './viewFundsAllocation.html'; 
         }
         document.getElementById("distroReport").onclick = function(request) {
           alert("Distrobution Report will be available for viewing by date once database integration is completed");
@@ -51,8 +51,7 @@
           location.href = './fundsDisputeForm.html'; 
         }
         document.getElementById("checkContributionButton").onclick = function(request) {
-          alert("Contribution Report will be available for viewing once database integration is completed");
-          location.href = './productionCompanyMenu.html'; 
+          location.href = './viewContributionReport.html'; 
         }
         document.getElementById("editAgreementButton").onclick = function(request) {
           alert("Agreements already made, click OK to edit");

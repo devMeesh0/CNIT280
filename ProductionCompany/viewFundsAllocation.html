@@ -1,0 +1,44 @@
+<!doctype html>
+
+<html lang="en">
+    <style>
+        table, th, td {
+          border:1px solid black;
+        }
+        </style>
+<head>
+  <meta charset="utf-8">
+
+  <title>Electronic Data Interchange</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+</head>
+
+<body>  
+    <h1 style="display: flex; padding-left: 75px; padding-top: 5000;">Funds Allocation Reports</h1>
+    <table style="width:100%; display: flex; border: 2pt; border-color: black; padding: 75px;">
+        <tr>
+          <th><p>Reports By Date</p></th>\
+          <th><p>Return to Menu</p></th>
+        </tr>
+        <tr>
+          <td><p2 style="font-weight: 1; font-size:small; color: blue; text-decoration: underline blue;">Report_1-20-2022.pdf</p2></td>
+          <td><button id="returnToMenu"> Return</button></td>
+        </tr>
+        <tr>
+          <td><p2 style="font-weight: 1; font-size:small; color: blue; text-decoration: underline blue;">Report_2-02-2021.pdf</p2></td>
+        </tr>
+        <tr>
+          <td><p2 style="font-weight: 1; font-size:small; color: blue; text-decoration: underline blue;">Report_3-03-3022.pdf</p2></td>
+        </tr>
+    </table>
+    
+      <script>
+        document.getElementById("returnToMenu").onclick = function(request) {
+          location.href = './productionCompanyMenu.html'; 
+        }
+      </script> 
+
+</body>
+</html>
