@@ -1,0 +1,38 @@
+<!doctype html>
+
+<html lang="en">
+    <style>
+        table, th, td {
+          border:1px solid black;
+        }
+        </style>
+<head>
+  <meta charset="utf-8">
+
+  <title>Electronic Data Interchange</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+</head>
+
+<body>  
+    <h1 style="display: flex; padding-left: 75px; padding-top: 5000;">Eligibility Status</h1>
+    <table style="width:100%; display: flex; border: 2pt; border-color: black; padding: 75px;">
+        <tr>
+          <th><p>Eligibility for Plan A</p></th>
+          <td><p>Eligible</p></td>
+        </tr>
+        <tr>
+          <th>Return to Menu</td>
+            <td><button id="returnToMenu"> Return</button></td>
+        </tr>
+    </table>
+    
+      <script>
+        document.getElementById("returnToMenu").onclick = function(request) {
+          location.href = './memberMenu.html'; 
+        }
+      </script> 
+
+</body>
+</html>

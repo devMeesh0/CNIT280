@@ -10,7 +10,7 @@
   <meta charset="utf-8">
 
   <title>Electronic Data Interchange</title>
-
+  <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="css/styles.css?v=1.0">
 </head>
 
@@ -24,6 +24,8 @@
           <th><p>Issue a Report</p></th>
           <th><p>Issue an Inadequate Contributions Report Report</p></th>
           <th><p>Fill out a DGA Plan Enrollment Questionnaire</p></th>
+          <th><p>Veiw DGA Plan Eligibility Status</p></th>
+          <th><p>Retirees: Check Plan A Coverage Status</p></th>
         </tr>
         <tr>
           <td><button id="contributionReportButton" >View Contribution Report</button></td>
@@ -31,7 +33,8 @@
           <td><button id="issueReportButton" >Issue a claim Report</button></td>
           <td><button id="inadequateContributionsReport" >Issue an Inadequate Contributions Report</button></td>
           <td><button id="questionnaireButton" >Fill out Questionnaire</button></td>
-          
+          <td><button id="viewEligibilityStatusButton" >View Status</button></td>
+          <td><button id="viewCoverageStatusButton" >View Status</button></td>
         </tr>
       </table>
       <script>
@@ -49,6 +52,12 @@
         }
         document.getElementById("questionnaireButton").onclick = function(request) {
           location.href = './plansQuestionnaireForm.html'; 
+        }
+        document.getElementById("viewEligibilityStatusButton").onclick = function(request) {
+          location.href = './viewEligibilityStatus.html'; 
+        }
+        document.getElementById("viewCoverageStatusButton").onclick = function(request) {
+          location.href = './viewCoverageStatus.html'; 
         }
         
       </script>
