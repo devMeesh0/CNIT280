@@ -11,22 +11,26 @@
 
 <body>
     
-  <h1 style="display:flex; padding-left: 50px;">Company Verification</h1>
-  
+  <h1 style="display:flex; padding-left: 50px;">Search for Production Company</h1>
+  <h3 style="display:flex; padding-left: 50px;">Enter the company name to see their past contribution reports.</h3>
+  <table>
+    <td>
     <div class="container" style=" padding: 50px;">
       <form id="verificationButtonForm">
         <b>Company Name: <input type="text" placeholder="Enter Username" name="companyName" required> </b> <br>
         <p style="color: red;">For TA's:: Company: "The Company"</p>
-        <button type="reset" id="companyVerificationButton">Verify</button>
+        <button type="reset" id="companyVerificationButton">Search</button>
      </form>
      <button onclick="location.href = './index.html'">Back to Main Menu</button>
     </div>
+</td>
+</table>
   <script>
     document.getElementById("companyVerificationButton").onclick = function() {
       var companyName = document.getElementById("verificationButtonForm")[0].value;
 
       if(companyName == "The Company") { 
-        location.href = './memberMenu.html'; 
+        location.href = './viewContributionReport.html'; 
       } else {
         alert("Incorrect login, try again");
         location.href = './companyverification.html'; 

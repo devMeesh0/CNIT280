@@ -1,0 +1,67 @@
+<!doctype html>
+
+<html lang="en">
+    <style>
+        table, th, td {
+          border:1px solid black;
+        }
+        </style>
+<head>
+  <meta charset="utf-8">
+
+  <title>Electronic Data Interchange</title>
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>  
+    <h1 style="display: flex; padding-left: 75px; padding-top: 5000;">View Recieved Dispute of Funds Reports</h1>
+    <table style="width:100%; display: flex; border: 2pt; border-color: black; padding: 75px;">
+        <tr>
+          <th><p>New Reports</p></th>
+          <th><p>Accept/Decline</p></th>
+          <th><p>Return to Menu</p></th>
+        </tr>
+        <tr>
+          <td><p2 style="font-weight: 1; font-size:small; color: blue; text-decoration: underline blue;">Dispute01.pdf</p2></td>
+          <td><input type="checkbox" id="accept"> Accept
+            <input type="checkbox" id="accept"> Decline
+          </td>
+          <td><button id="returnToMenu"> Return</button></td>
+        </tr>
+        <tr>
+          <td><p2 style="font-weight: 1; font-size:small; color: blue; text-decoration: underline blue;">Dispute02.pdf</p2></td>
+          <td><input type="checkbox" id="accept"> Accept
+            <input type="checkbox" id="accept"> Decline
+          </td>
+        </tr>
+        <tr>
+          <td><p2 style="font-weight: 1; font-size:small; color: blue; text-decoration: underline blue;">Dispute03.pdf</p2></td>
+          <td><input type="checkbox" id="accept"> Accept
+            <input type="checkbox" id="accept"> Decline
+          </td>
+        </tr>
+        <tr>
+          <td><p2 style="font-weight: 1; font-size:small; color: blue; text-decoration: underline blue;">Dispute04.pdf</p2></td>
+          <td><input type="checkbox" id="accept"> Accept
+            <input type="checkbox" id="accept"> Decline
+          </td>
+        </tr>
+        <tr>
+          <th><button id="submitButton">Submit</button></th>
+          </tr>
+    </table>
+    
+      <script>
+        document.getElementById("submitButton").onclick = function() {
+              // console.log(document.getElementByName("uname").value);
+              alert("Submission sent!");
+              location.href = './employeeMenu.html'; 
+            }
+        document.getElementById("returnToMenu").onclick = function(request) {
+          location.href = './employeeMenu.html'; 
+        }
+      </script> 
+
+</body>
+</html>
