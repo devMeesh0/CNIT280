@@ -20,22 +20,22 @@
         <table style="width:100%; display: flex; border: 2pt; border-color: black; padding: 75px;">
             <tr>
                 <th>Agreement ID:</th>
-                <th><input style="display: flex;" type="text" placeholder="ID Number of Agreement" name="prob" required></th>
+                <th><input style="display: flex;" type="text" placeholder="01" name="prob" required></th>
             </tr>
             <tr>
                 <th>Your Company's Name</th>
-                <th><input type="text" placeholder="Your companies name" name="probDesc" required></th>
+                <th><input type="text" placeholder="The Company" name="probDesc" required></th>
             </tr>
             <tr>
                 <th>Your Company's Needs</th>
-                <th><input type="text" placeholder="Enter a description of your companies needs for this agreement" name="probDesc" required></th>
+                <th><input type="text" placeholder="Submission for DGA Plans Consideration" name="probDesc" required></th>
             </tr>
             <tr>
-                <th>Enter Date:</th>
+                <th>Enter Date of Edit:</th>
                 <th><input type="date" name="date" required></th>
             </tr>
             <tr>
-                <th>Time:</th>
+                <th>Time of Edit:</th>
                 <th><input type="time" name="time" required></th>
             </tr>
           </table>
@@ -45,8 +45,8 @@
           <script>
             document.getElementById("submitButton").onclick = function() {
               // console.log(document.getElementByName("uname").value);
-              alert("Submission will go through to DGA Employee when database integration is added");
-              location.href = './comingsoon.html'; 
+              alert("Submission updated and sent to DGA Employee");
+              location.href = './productionCompanyMenu.html'; 
             }
           </script>
 </body>

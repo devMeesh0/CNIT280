@@ -18,24 +18,46 @@
     <h1 style="display: flex; padding-left: 75px; padding-top: 5000;">View Recieved Questionnaires</h1>
     <table style="width:100%; display: flex; border: 2pt; border-color: black; padding: 75px;">
         <tr>
-          <th><p>View New Questionnairs</p></th>
-          <th><p>View All Questionnaires</p></th>
+          <th><p>New Questionnaires</p></th>
+          <th><p>Accept/Decline</p></th>
           <th><p>Return to Menu</p></th>
-          
         </tr>
         <tr>
-          <td><button id="newQuestionnaires"> View </button></td>
-          <td><button id="allQuestionnaires"> View</button></td>
+          <th><p2 style="font-weight: 1; font-size:small; color: blue; text-decoration: underline blue;">Agreement01.pdf</p2></th>
+          <td><input type="checkbox" id="accept"> Accept
+            <input type="checkbox" id="accept"> Decline
+          </td>
           <td><button id="returnToMenu"> Return</button></td>
         </tr>
-      </table>
+        <tr>
+          <th><p2 style="font-weight: 1; font-size:small; color: blue; text-decoration: underline blue;">Agreement02.pdf</p2></th>
+          <td><input type="checkbox" id="accept"> Accept
+            <input type="checkbox" id="accept"> Decline
+          </td>
+        </tr>
+        <tr>
+          <th><p2 style="font-weight: 1; font-size:small; color: blue; text-decoration: underline blue;">Agreement03.pdf</p2></th>
+          <td><input type="checkbox" id="accept"> Accept
+            <input type="checkbox" id="accept"> Decline
+          </td>
+        </tr>
+        <tr>
+          <th><p2 style="font-weight: 1; font-size:small; color: blue; text-decoration: underline blue;">Agreement04.pdf</p2></th>
+          <td><input type="checkbox" id="accept"> Accept
+            <input type="checkbox" id="accept"> Decline
+          </td>
+        </tr>
+        <tr>
+          <th><button id="submitButton">Submit</button></th>
+          </tr>
+    </table>
+    
       <script>
-        document.getElementById("newQuestionnaires").onclick = function(request) {
-          location.href = './comingsoon.html'; 
-        }
-        document.getElementById("allQuestionnaires").onclick = function(request) {
-          location.href = './comingoon.html'; 
-        }
+        document.getElementById("submitButton").onclick = function() {
+              // console.log(document.getElementByName("uname").value);
+              alert("Submission sent!");
+              location.href = './employeeMenu.html'; 
+            }
         document.getElementById("returnToMenu").onclick = function(request) {
           location.href = './employeeMenu.html'; 
         }
