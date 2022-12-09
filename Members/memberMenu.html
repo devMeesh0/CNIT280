@@ -37,6 +37,9 @@
           <td><button id="viewCoverageStatusButton" >View Status</button></td>
         </tr>
       </table>
+      <div style="padding-left: 75px;">
+        <button id="logOut">Log Out</button>
+      </div>
       <script>
         document.getElementById("contributionReportButton").onclick = function(request) {
           location.href = './viewContributionReport.html'; 
@@ -58,6 +61,9 @@
         }
         document.getElementById("viewCoverageStatusButton").onclick = function(request) {
           location.href = './viewCoverageStatus.html'; 
+        }
+        document.getElementById("logOut").onclick = function(request) {
+          location.href = './..'; 
         }
         
       </script>

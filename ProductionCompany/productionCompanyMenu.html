@@ -35,6 +35,9 @@
           <td><button id="editAgreementButton" >Create or edit a Edit DGA Agreement</button></td>
         </tr>
       </table>
+      <div style="padding-left: 75px;">
+        <button id="logOut">Log Out</button>
+      </div>
 
       <script>
         document.getElementById("dissolutionAgreementButton").onclick = function(request) {
@@ -56,6 +59,9 @@
         document.getElementById("editAgreementButton").onclick = function(request) {
           alert("Agreements already made, click OK to edit");
           location.href = './DGAagreement.html'; 
+        }
+        document.getElementById("logOut").onclick = function(request) {
+          location.href = './..'; 
         }
 
       </script>
